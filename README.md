@@ -2,7 +2,7 @@
 
 Sometimes you would rather not have yet another library, like libcurl and php5-curl, or the HTTP extension cluttering up your server, adding yet another thing to keep up-to-date. And even though cURL is very popular to use for HTTP requests in PHP, it's a little cumbersome, where you have to make a page full of `curl_set_opt()` and other odd calls just to get the headers and have sane HTTP options.
 
-http-fast just uses built-in PHP facilities so you don't need to install anything extra. And the interface is a little more like the CLI version of cURL.
+http-fast just uses [built-in PHP facilities](http://php.net/manual/en/function.stream-context-create.php) so you don't need to install anything extra. And the interface is a little more like the CLI version of cURL.
 
 ```php
 list($status, $headers, $body) = http('GET', 'http://example.com');
