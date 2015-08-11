@@ -7,7 +7,7 @@ http-fast just uses [built-in PHP facilities](http://php.net/manual/en/function.
 ```php
 list($status, $headers, $body) = http('GET', 'http://example.com');
 
-if ($status >= 200 && $status < 300) {
+if ($status >= 200 && $status < 400) {
   // ...
 }
 ```
