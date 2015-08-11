@@ -5,7 +5,7 @@ for when you want to http("POST", "http://example.com/api") without dependencies
 list($sent, $headers, $body) = http('GET', 'http://example.com');
 ```
 
-Internally, http-fast uses an HTTP stream resource. A little like file_get_contents
+Internally, http-fast uses an HTTP stream resource. As a side affect of this, it can be restricted by [`allow_url_fopen`](http://php.net/manual/en/filesystem.configuration.php#ini.allow-url-fopen)
 
 ## Options
 
