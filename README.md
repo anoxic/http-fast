@@ -5,7 +5,11 @@ Sometimes you would rather not have yet another library, like libcurl and php5-c
 http-fast just uses built-in PHP facilities so you don't need to install anything extra. And the interface is a little more like the CLI version of cURL.
 
 ```php
-list($sent, $headers, $body) = http('GET', 'http://example.com');
+list($status, $headers, $body) = http('GET', 'http://example.com');
+
+if ($status > 200 && $status < 400) {
+  // ...
+}
 ```
 
 ## Options
